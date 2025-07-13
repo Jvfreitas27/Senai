@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dominologic - Máquinas</title>
+  <link rel="stylesheet" href="/css.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome para ícones de redes sociais e dominó -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo-container">
+      <!-- Certifique-se de que o caminho para sua logo está correto -->
+      
+      <h1>DOMINOLOGIC</h1>
+      
+    </div>
+    <button id="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <nav class="sidebar-menu">
+      <a href="#section-sobre">Sobre</a>
+      <a href="#section-maquinas">Máquinas</a>
+      <a href="/instruçoes/instruçoes.html">Instruções</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="section-sobre" class="section active">
+      <div class="content-box">
+        <h2>Sobre a Dominologic</h2>
+        <p>Empresa especializada em soluções industriais com alta performance, focada em inovação e segurança. Nossa missão é otimizar a produção dos nossos clientes através de máquinas de ponta e suporte técnico especializado.</p>
+        <div class="video-container">
+          <!-- Substitua 'YOUR_YOUTUBE_VIDEO_ID' pelo ID do seu vídeo do YouTube -->
+          <iframe src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>Assista ao nosso vídeo institucional para saber mais sobre nossa história e valores.</p>
+      </div>
+    </section>
+
+    <section id="section-maquinas" class="section">
+      <h2 class="section-title">Nossas Máquinas</h2>
+      <div class="machine-grid">
+        <!-- Máquina 1 -->
+        <div class="machine-card" data-id="1">
+          <div class="machine-image">
+            <img src="/download (1).jpg" alt="Máquina A">
+          </div>
+          <div class="machine-info">
+            <h3>TORNO</h3>
+            <div><strong>Marca:</strong> IndustrialTech</div>
+            <div><strong>Modelo:</strong> MX1000</div>
+            <div><strong>Último conserto:</strong> <input type="date" class="date-field" data-field="ultimo" /></div>
+            <div><strong>Próximo conserto:</strong> <input type="date" class="date-field" data-field="proximo" /></div>
+            <div>
+              <strong>Descrição:</strong>
+              <textarea class="desc-field" data-field="descricao" rows="3" placeholder="Digite aqui..."></textarea>
+            </div>
+            <button class="save-btn">Salvar</button>
+          </div>
+        </div>
+
+        <!-- Máquina 2 -->
+        <div class="machine-card" data-id="2">
+          <div class="machine-image">
+            <img src="/download.jpg" alt="Máquina B">
+          </div>
+          <div class="machine-info">
+            <h3>TORNO</h3>
+            <div><strong>Marca:</strong> MechaPro</div>
+            <div><strong>Modelo:</strong> MPX200</div>
+            <div><strong>Último conserto:</strong> <input type="date" class="date-field" data-field="ultimo" /></div>
+            <div><strong>Próximo conserto:</strong> <input type="date" class="date-field" data-field="proximo" /></div>
+            <div>
+              <strong>Descrição:</strong>
+              <textarea class="desc-field" data-field="descricao" rows="3" placeholder="Digite aqui..."></textarea>
+            </div>
+            <button class="save-btn">Salvar</button>
+          </div>
+        </div>
+
+        <!-- Máquina 3 -->
+        <div class="machine-card" data-id="3">
+          <div class="machine-image">
+            <img src="/images (1).jpg" alt="Máquina C">
+          </div>
+          <div class="machine-info">
+            <h3>FURADEIRA DE BANCADA</h3>
+            <div><strong>Marca:</strong> TechSolutions</div>
+            <div><strong>Modelo:</strong> TS300</div>
+            <div><strong>Último conserto:</strong> <input type="date" class="date-field" data-field="ultimo" /></div>
+            <div><strong>Próximo conserto:</strong> <input type="date" class="date-field" data-field="proximo" /></div>
+            <div>
+              <strong>Descrição:</strong>
+              <textarea class="desc-field" data-field="descricao" rows="3" placeholder="Digite aqui..."></textarea>
+            </div>
+            <button class="save-btn">Salvar</button>
+          </div>
+        </div>
+
+        <!-- Máquina 4 -->
+        <div class="machine-card" data-id="4">
+          <div class="machine-image">
+            <img src="/images.jpg" alt="Máquina D">
+          </div>
+          <div class="machine-info">
+            <h3>FURADEIRA DE BANCADA</h3>
+            <div><strong>Marca:</strong> GlobalMachines</div>
+            <div><strong>Modelo:</strong> GM500</div>
+            <div><strong>Último conserto:</strong> <input type="date" class="date-field" data-field="ultimo" /></div>
+            <div><strong>Próximo conserto:</strong> <input type="date" class="date-field" data-field="proximo" /></div>
+            <div>
+              <strong>Descrição:</strong>
+              <textarea class="desc-field" data-field="descricao" rows="3" placeholder="Digite aqui..."></textarea>
+            </div>
+            <button class="save-btn">Salvar</button>
+          </div>
+        </div>
+
+        <!-- Máquina 5 -->
+        <div class="machine-card" data-id="5">
+          <div class="machine-image">
+            <img src="/download (3).jpg" alt="Máquina E">
+          </div>
+          <div class="machine-info">
+            <h3>SERRA DE MESA</h3>
+            <div><strong>Marca:</strong> Innovatech</div>
+            <div><strong>Modelo:</strong> IT700</div>
+            <div><strong>Último conserto:</strong> <input type="date" class="date-field" data-field="ultimo" /></div>
+            <div><strong>Próximo conserto:</strong> <input type="date" class="date-field" data-field="proximo" /></div>
+            <div>
+              <strong>Descrição:</strong>
+              <textarea class="desc-field" data-field="descricao" rows="3" placeholder="Digite aqui..."></textarea>
+            </div>
+            <button class="save-btn">Salvar</button>
+          </div>
+        </div>
+
+        <!-- Máquina 6 -->
+        <div class="machine-card" data-id="6">
+          <div class="machine-image">
+            <img src="/download (2).jpg" alt="Máquina F">
+          </div>
+          <div class="machine-info">
+            <h3>SERRA DE MESA</h3>
+            <div><strong>Marca:</strong> FutureTech</div>
+            <div><strong>Modelo:</strong> FT900</div>
+            <div><strong>Último conserto:</strong> <input type="date" class="date-field" data-field="ultimo" /></div>
+            <div><strong>Próximo conserto:</strong> <input type="date" class="date-field" data-field="proximo" /></div>
+            <div>
+              <strong>Descrição:</strong>
+              <textarea class="desc-field" data-field="descricao" rows="3" placeholder="Digite aqui..."></textarea>
+            </div>
+            <button class="save-btn">Salvar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2023 Dominologic. Todos os direitos reservados.</p>
+    <p>Contato: contato@dominologic.com.br | (22) 999280033</p>
+    <div class="social-links">
+      <!-- Lembre-se de substituir os href pelos links reais das suas redes sociais -->
+      <a href="https://www.instagram.com/dominologic" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/dominologic" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/dominologic" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="mailto:contato@dominologic.com.br" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- Chatbot Container -->
+  <div class="chatbot-container" id="chatbot-container">
+    <div class="chatbot-header">
+      <h3>Assistente Dominologic</h3>
+      <button id="close-chatbot" aria-label="Fechar Chatbot">&times;</button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages">
+      <div class="message bot-message">Olá! Sou o assistente virtual da Dominologic. Como posso ajudar hoje?</div>
+    </div>
+    <div class="chatbot-input">
+      <input type="text" id="chatbot-input-field" placeholder="Digite sua mensagem..." />
+      <button id="send-chatbot-message" aria-label="Enviar Mensagem">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Chatbot Toggle Button -->
+  <button class="chatbot-toggle-btn" id="chatbot-toggle-btn" aria-label="Abrir Chatbot">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/chat.png" alt="Chat Icon">
+  </button>
+
+  <script>
+    // Toggle menu
+    document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.toggle('open');
+    });
+
+    // Seções
+    document.querySelectorAll('.sidebar-menu a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+        const targetId = link.getAttribute('href').substring(1);
+        document.getElementById(targetId).classList.add('active');
+        // Fechar sidebar em telas menores após clicar em um link
+        if (window.innerWidth <= 768) {
+          document.getElementById('sidebar').classList.remove('open');
+        }
+      });
+    });
+
+    // Banco de dados local (localStorage)
+    const loadMachineData = () => {
+      document.querySelectorAll('.machine-card').forEach(card => {
+        const id = card.dataset.id;
+        const saved = JSON.parse(localStorage.getItem(`machine_${id}`)) || {};
+        card.querySelectorAll('.date-field, .desc-field').forEach(input => {
+          const field = input.dataset.field;
+          if (saved[field]) input.value = saved[field];
+        });
+      });
+    };
+
+    const saveMachineData = (card) => {
+      const id = card.dataset.id;
+      const data = {};
+      card.querySelectorAll('.date-field, .desc-field').forEach(input => {
+        const field = input.dataset.field;
+        data[field] = input.value;
+      });
+      localStorage.setItem(`machine_${id}`, JSON.stringify(data));
+      alert("Dados da máquina salvos com sucesso!");
+    };
+
+    document.querySelectorAll('.save-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.machine-card');
+        saveMachineData(card);
+      });
+    });
+
+    loadMachineData();
+
+    // --- Chatbot Logic ---
+    const chatbotContainer = document.getElementById('chatbot-container');
+    const chatbotToggleBtn = document.getElementById('chatbot-toggle-btn');
+    const closeChatbotBtn = document.getElementById('close-chatbot');
+    const chatbotMessages = document.getElementById('chatbot-messages');
+    const chatbotInputField = document.getElementById('chatbot-input-field');
+    const sendChatbotMessageBtn = document.getElementById('send-chatbot-message');
+
+    let chatbotState = {
+      awaiting: null, // 'mttr_data', 'mtbf_data'
+      data: {}
+    };
+
+    chatbotToggleBtn.addEventListener('click', () => {
+      chatbotContainer.classList.toggle('open');
+      if (chatbotContainer.classList.contains('open')) {
+        chatbotInputField.focus();
+      }
+    });
+
+    closeChatbotBtn.addEventListener('click', () => {
+      chatbotContainer.classList.remove('open');
+      chatbotState = { awaiting: null, data: {} }; // Resetar estado ao fechar
+    });
+
+    const appendMessage = (sender, text) => {
+      const messageDiv = document.createElement('div');
+      messageDiv.classList.add('message', `${sender}-message`);
+      messageDiv.innerHTML = text; // Usar innerHTML para links e formatação
+      chatbotMessages.appendChild(messageDiv);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight; // Scroll to bottom
+    };
+
+    // Função para normalizar o texto (remover acentos, converter para minúsculas)
+    const normalizeText = (text) => {
+      return text.toLowerCase()
+                 .normalize("NFD") // Normaliza para decompor caracteres acentuados
+                 .replace(/[\u0300-\u036f]/g, ""); // Remove os diacríticos (acentos)
+    };
+
+    const handleUserMessage = async () => {
+      const userText = chatbotInputField.value.trim();
+      if (userText === '') return;
+
+      appendMessage('user', userText);
+      chatbotInputField.value = '';
+
+      let botResponse = "Desculpe, não entendi. Você pode reformular sua pergunta?";
+      const normalizedUserText = normalizeText(userText);
+
+      // --- Lógica de estado para MTTR/MTBF ---
+      if (chatbotState.awaiting === 'mttr_data') {
+        const parts = normalizedUserText.split(',').map(s => parseFloat(s.trim()));
+        if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+          const tempoParado = parts[0];
+          const numFalhas = parts[1];
+          if (numFalhas === 0) {
+            botResponse = "O número de falhas não pode ser zero para calcular o MTTR. Por favor, insira valores válidos.";
+          } else {
+            const mttr = tempoParado / numFalhas;
+            botResponse = `Certo! O MTTR (Tempo Médio para Reparo) é de <span style="font-weight: bold; color: var(--primary-color);">${mttr.toFixed(2)} horas</span>.`;
+            chatbotState = { awaiting: null, data: {} }; // Resetar estado
+          }
+        } else {
+          botResponse = "Formato inválido. Por favor, insira o tempo total parado (em horas) e o número de falhas, separados por vírgula (ex: 100,5).";
+        }
+      } else if (chatbotState.awaiting === 'mtbf_data') {
+        const parts = normalizedUserText.split(',').map(s => parseFloat(s.trim()));
+        if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+          const horasTrabalhadas = parts[0];
+          const numFalhas = parts[1];
+          if (numFalhas === 0) {
+            botResponse = "O número de falhas não pode ser zero para calcular o MTBF. Por favor, insira valores válidos.";
+          } else {
+            const mtbf = horasTrabalhadas / numFalhas;
+            botResponse = `Certo! O MTBF (Tempo Médio Entre Falhas) é de <span style="font-weight: bold; color: var(--primary-color);">${mtbf.toFixed(2)} horas</span>.`;
+            chatbotState = { awaiting: null, data: {} }; // Resetar estado
+          }
+        } else {
+          botResponse = "Formato inválido. Por favor, insira as horas totais trabalhadas e o número de falhas, separados por vírgula (ex: 5000,10).";
+        }
+      }
+      // --- Lógica de respostas gerais ---
+      else {
+        // Funções auxiliares para verificar múltiplas palavras-chave
+        const containsAny = (text, keywords) => keywords.some(keyword => text.includes(keyword));
+        const containsAll = (text, keywords) => keywords.every(keyword => text.includes(keyword));
+
+        // Saudações
+        const greetings = ['ola', 'oi', 'bom dia', 'boa tarde', 'boa noite', 'e ai', 'tudo bem'];
+        if (containsAny(normalizedUserText, greetings)) {
+          botResponse = "Olá! Sou o assistente virtual da Dominologic. Como posso ajudar você hoje?";
+        }
+        // Funções do Chatbot
+        else if (containsAny(normalizedUserText, ['o que voce pode fazer', 'quais suas funcoes', 'ajuda', 'como funciona', 'o que faz'])) {
+          botResponse = `Eu posso te ajudar com diversas informações sobre a Dominologic, nossas máquinas, e até mesmo realizar alguns cálculos!
+          <br><br>Posso:
+          <ul>
+            <li>Falar sobre a Dominologic</li>
+            <li>Informar sobre nossas máquinas</li>
+            <li>Calcular MTTR (Tempo Médio para Reparo)</li>
+            <li>Calcular MTBF (Tempo Médio Entre Falhas)</li>
+            <li>Informar sobre benefícios para clientes</li>
+            <li>Falar sobre EPIs e segurança no trabalho</li>
+            <li>Encaminhar para um atendente humano</li>
+            <li>Falar sobre o layout da empresa</li>
+          </ul>
+          <br>É só perguntar!`;
+        }
+        // Sobre a Empresa
+        else if (containsAny(normalizedUserText, ['sobre a empresa', 'o que e dominologic', 'quem sao voces', 'historia da empresa', 'missao'])) {
+          botResponse = "A Dominologic é uma empresa especializada em soluções industriais de alta performance, focada em inovação e segurança. Otimizamos a produção dos nossos clientes com máquinas de ponta e suporte técnico especializado.";
+        }
+        // Máquinas
+        else if (containsAny(normalizedUserText, ['maquinas', 'quais maquinas voces tem', 'equipamentos', 'produtos'])) {
+          botResponse = "Temos uma variedade de máquinas industriais de última geração. Você pode ver mais detalhes e informações sobre manutenção na seção 'Máquinas' do nosso site.";
+        }
+        // Contato / Atendente
+        else if (containsAny(normalizedUserText, ['contato', 'falar com alguem', 'atendente', 'whatsapp', 'telefone', 'email'])) {
+          botResponse = "Se você deseja falar com um atendente humano, clique no link a seguir para ser direcionado ao nosso WhatsApp: <a href='https://wa.me/5522999280033?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20atendente.' target='_blank'>Falar com Atendente (WhatsApp)</a>";
+        }
+        // Benefícios
+        else if (containsAny(normalizedUserText, ['beneficios', 'vantagens para o cliente', 'por que escolher voces', 'o que voces oferecem'])) {
+          botResponse = "Nossos clientes se beneficiam de máquinas de alta performance, suporte técnico especializado, otimização da produção, redução de custos operacionais e maior segurança no ambiente de trabalho.";
+        }
+        // EPIs
+        else if (containsAny(normalizedUserText, ['epis', 'equipamento de protecao individual', 'seguranca individual'])) {
+          botResponse = "Os EPIs (Equipamentos de Proteção Individual) são cruciais para a segurança. Eles protegem os trabalhadores contra riscos que podem ameaçar sua saúde e segurança. Sempre utilize os EPIs adequados para cada tarefa!";
+        }
+        // Comportamento / Normas de Segurança
+        else if (containsAny(normalizedUserText, ['comportamento','comportamento na area de servico', 'seguranca no trabalho', 'normas de seguranca', 'procedimentos de seguranca', 'como se portar'])) {
+          botResponse = "Na área de serviço, é fundamental seguir os procedimentos de segurança, manter a organização, comunicar riscos, e sempre utilizar os EPIs. A atenção e o respeito às normas garantem um ambiente seguro para todos.";
+        }
+        // Riscos
+        else if (containsAny(normalizedUserText, ['riscos','gestão de riscos', 'análise de riscos', 'tipos de riscos', 'riscos operacionais', 'riscos na indústria', 'riscos ocupacionais', 'identificação de riscos', 'avaliação de riscos', 'controle de riscos', 'riscos ergonômicos', 'riscos ambientais', 'riscos de segurança', 'mapa de riscos', 'riscos físicos', 'riscos químicos', 'riscos biológicos', 'classificação de riscos', 'exemplos de riscos', 'prevenção de riscos', 'riscos no ambiente de trabalho','riscos na area de servico', 'perigos no trabalho', 'perigos na industria', 'riscos industriais'])) {
+          botResponse = "Os riscos podem incluir máquinas em movimento, ruído excessivo, produtos químicos, eletricidade, e quedas. É vital estar ciente desses perigos, seguir os protocolos de segurança e nunca operar equipamentos sem treinamento adequado.";
+        }
+        // Calcular MTTR
+        else if (containsAny(normalizedUserText, ['mttr cálculo', 'como calcular mttr', 'tempo médio de reparo', 'indicadores de manutenção', 'confiabilidade de máquina', 'análise de falhas', 'disponibilidade operacional', 'manutenção preditiva', 'kpi manutenção industrial', 'mtbf e mttr', 'como melhorar o mtbf', 'exemplo de cálculo mtbf', 'fórmula do mtbf', 'taxa de falha', 'tempo entre falhas', 'curva da banheira falhas', 'reduzir tempo de inatividade', 'indicadores de confiabilidade', 'fiabilidade operacional'])) {
+          botResponse = "Para calcular o MTTR (Tempo Médio para Reparo), preciso do tempo total que a máquina ficou parada (em horas) e o número de falhas. Por favor, digite esses dois valores separados por vírgula (ex: 100,5).";
+          chatbotState.awaiting = 'mttr_data';
+        }
+        // Calcular MTBF
+        else if (containsAny(normalizedUserText, ['mtbf', 'calcular mtbf', 'como calcular mtbf', 'mtbf cálculo', 'mtbf fórmula', 'exemplo mtbf', 'mtbf manutenção', 'mtbf o que é', 'mtbf significado', 'mtbf e mttr', 'mtbf confiabilidade', 'mtbf tempo entre falhas', 'mtbf engenharia', 'mtbf equipamento', 'mtbf indicador', 'melhorar mtbf', 'mtbf alto ou baixo', 'análise mtbf', 'mtbf manutenção industrial', 'mtbf produção'])) {
+          botResponse = "Para calcular o MTBF (Tempo Médio Entre Falhas), preciso das horas totais trabalhadas pela máquina e o número de falhas. Por favor, digite esses dois valores separados por vírgula (ex: 5000,10).";
+          chatbotState.awaiting = 'mtbf_data';
+        }
+        // Layout da Empresa (NOVO)
+        else if (containsAny(normalizedUserText, ['layout','layout da empresa', 'estrutura da empresa', 'ambiente de trabalho', 'seguranca do local', 'eficacia do layout','layout industrial', 'o que é layout industrial', 'layout de fábrica', 'tipos de layout industrial', 'layout produção', 'layout organizacional', 'layout por processo', 'layout por produto', 'layout celular', 'layout linha de montagem', 'layout funcional', 'layout físico industrial', 'layout planta industrial', 'exemplo de layout industrial', 'desenho de layout de fábrica', 'projeto de layout industrial', 'como fazer layout industrial', 'planejamento de layout', 'layout de processo produtivo', 'melhoria de layout'])) {
+            botResponse = "O layout da Dominologic é projetado para ser altamente seguro e eficaz. Priorizamos a otimização do fluxo de trabalho, a ergonomia e a segurança dos colaboradores, com sinalização clara, áreas de circulação definidas e equipamentos bem posicionados para maximizar a produtividade e minimizar riscos.";
+        }
+        // Agradecimento
+        else if (containsAny(normalizedUserText, ['obrigado', 'valeu', 'agradeco', 'muito obrigado'])) {
+          botResponse = "De nada! Se precisar de mais alguma coisa, é só perguntar.";
+        }
+      }
+
+      setTimeout(() => {
+        appendMessage('bot', botResponse);
+      }, 500); // Simulate thinking time
+    };
+
+    sendChatbotMessageBtn.addEventListener('click', handleUserMessage);
+    chatbotInputField.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        handleUserMessage();
+      }
+    });
+  </script>
+</body>
+</html>
+
